@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--LOGO CADASTRO-->
+    <div class="bloco">
+        <img src="img/pet.png">
+        
+        <!--HEADER-->
+        <h1>Cadastrar Pet</h1>
+        
+        <!--FORMULARIO-->
+        <form action="">
+
+            <!--NOME E IDADE-->
+            <div class="nomeIdade">
+                <input type="text" name="" placeholder="Nome do Pet" class="nome">
+                <input type="number" name="" placeholder="Idade" class="idade">
+            </div>
+            <!--EMAIL-->
+            <input type="email" name="" id="" placeholder="Email do Responsável">
+            <!--SELECIONAR ESPÉCIE-->
+            <p>Espécie</p>
+
+            <div class="radio">
+                <span>
+                    <input type="radio" name="especie" id="canino" checked>
+                    <label for="canino">Canino</label>
+                </span>
+                <!--PARA SÓ MARCAR UMA OPÇÃO, COLOQUE O MSM NAME PARA OS INPUTS-->
+                <span>
+                    <input type="radio" name="especie" id="felino">
+                    <label for="felino">Felino</label>
+                </span>
+            </div>
+
+            <!--SELEÇÃO PORTE-->
+            <p>Porte</p>
+
+            <div class="radio">
+                <span>
+                    <input type="radio" name="porte" id="pequeno" checked>
+                    <label for="pequeno">Pequeno</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="porte" id="medio">
+                    <label for="medio">Médio</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="porte" id="grande">
+                    <label for="grande">Grande</label>
+                </span>
+            </div>
+            
+            <!--BOTÃO-->
+            <button>Cadastrar</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*CENTRALIZAÇÃO ELEMENTOS*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(42, 138, 93);
+    color: #5f5f5f;
+}
+
+img{
+    width: 150px;
+    height: 120px;
+    /*Para eu definir absolute aqui, preciso definir relative no bloco*/
+    position: absolute;
+    top: -112px;
+    transform: translateX(40%);
+
+}
+.bloco{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    max-width: 320px;
+}
+
+.bloco h1{
+    color: #2DAA6d;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+input{
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    color: #484848;
+    font-size: 12px;
+}
+
+button{
+    background-color: #2DAA6d;
+    border: none;
+    padding: 0.7rem 1rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #5aad85;
+}
+
+.nomeIdade{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nome{
+    width: 65%;
+}
+
+.idade{
+    width: 33%;
+}
+
+
+input[type=email]{
+    width: 100%;
+}
+
+.radio{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+p{
+    margin: 10px 0 5px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    justify-content: space-between;
+}
